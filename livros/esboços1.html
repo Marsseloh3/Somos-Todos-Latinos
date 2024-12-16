@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style2.css">
+    <title>Vinte Poemas de Amor e uma Canção Desesperada</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <h1>Logo</h1>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"> Sobre</a></li>
+                </ul>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="images/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+            </ul>
+
+        </div>
+    </header>
+
+    <main>
+        <div id="voltar">
+            <i class="fa-solid fa-arrow-left"></i>
+            <a href="/index.html"><strong>Voltar</strong></a>
+        </div>
+        <div id="info">
+            <img src="images/livros1.jpg" class="foto">
+
+            <div>
+                <h1>Vinte Poemas de Amor e uma Canção Desesperada</h1>
+                <p>"La explosión del joven Neruda EDICIÓN BILINGÜE Publicado originalmente en 1924, Veinte
+                    poemas de amor y una canción desesperada es hasta el día de hoy uno de los títulos de poesía más
+                    vendidos en lengua española. Fue el segundo libro publicado por el joven Pablo Neruda (1904 -1973),
+                    tras Crepúsculo, y ya podemos ver aquí los principales temas que marcarían toda la obra literaria
+                    del autor: el asombro del ser humano ante la experiencia del amor, el elogio de la mujer amada y la
+                    celebración. de paisajes chilenos Como señaló Gabriela Mistral, Neruda significó “un hombre nuevo en
+                    América, una sensibilidad con la que abrió un nuevo capítulo emocional americano sobre esta obra:
+                    “Es un libro que me encanta porque, a pesar de su agudeza”. melancolía, el placer de vivir está
+                    presente en ella”. “Puedo escribir los versos más tristes esta noche. La deseaba y, a veces, ella
+                    también me deseaba”. Quería hacerlo. En noches como ésta, la tuve en mis brazos y la besé tantas
+                    veces bajo el cielo infinito”.
+                </p>
+            </div>
+        </div>
+        <div class=" downloads">
+
+            <a href="https://www.amazon.com.br/Vinte-poemas-amor-can%C3%A7%C3%A3o-desesperada/dp/6556660388"> Download
+                pt-br </a>
+
+            <a href="https://www.amazon.com.br/Poemas-Amor-Una-Canci%C3%B3n-Desesperada/dp/6074003696"> amazon espanhol
+            </a>
+        </div>
+        <hr>
+    </main>
+
+    <article>
+        <div id="info">
+            <img src="images/pablo.jpg" class="artista">
+
+            <div>
+                <h1>pablo neruda</h1>
+                "Pablo Neruda (Ricardo Eliecer Neftalí Reyes Basoalto) nació el 12 de julio de 1904 en Parral, Chile.
+                Cuando tenía apenas dos meses quedó huérfano de su madre. Así que, dos años después, su padre se mudó a
+                Temuco y Volvió a casarse en esa ciudad, de 1910 a 1920.
+
+                Su primera publicación fue el artículo “Entusiasmo y constancia”, firmado como Neftalí Reyes, en 1917,
+                en el diario La Mañana. A partir de entonces comenzó a publicar poesía en revistas como Corre-Vuela y
+                Selva Austral. En 1919 obtuvo el tercer lugar en los juegos florales del Maule, con el poema “Nocturno
+                ideal”.
+
+                </p>
+            </div>
+        </div>
+    </article>
+
+    <div class="container">
+        <h1>Conversor de <span>Texto</span> para <span>Fala</span></h1>
+        <p>Digite um texto ou envie algum arquivo para ser lido:</p>
+        <div id="entrada-de-conteudo">
+            <textarea placeholder="Digite alguma coisa..." id="entrada-de-texto"></textarea>
+            <div>
+                <label for="upload-arquivo" id="arquivo-label">Enviar arquivo</label>
+                <input type="file" id="upload-arquivo" accept=".txt" />
+            </div>
+        </div>
+        <div class="acoes">
+            <div class="acao-box">
+                <p>Selecione a voz:</p>
+                <select id="selecao-voz"></select>
+            </div>
+            <div class="acao-box">
+                <p>Clique para ouvir:</p>
+                <button id="ouvir-btn">Ouvir</button>
+            </div>
+            <div class="acao-box">
+                <p>Obtenha um arquivo do conteúdo:</p>
+                <button id="baixar-texto-btn">Baixar Texto</button>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+
+    <script>
+        function menuShow() {
+            let menuMobile = document.querySelector('.mobile-menu');
+            if (menuMobile.classList.contains('open')) {
+                menuMobile.classList.remove('open');
+                document.querySelector('.icon').src = "images/menu_white_36dp.svg";
+            } else {
+                menuMobile.classList.add('open');
+                document.querySelector('.icon').src = "images/close_white_36dp.svg";
+            }
+        }
+
+    </script>
+</body>
+
+</html>

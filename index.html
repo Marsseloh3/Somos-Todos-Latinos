@@ -9,10 +9,12 @@
         integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <script src="src/JavaScript/script.js" defer></script>
 </head>
 
-<body onload="sort()" style="background-color: red;">
+<body onload="sort()">
     <header>
         <nav class="nav-bar">
             <div class="logo">
@@ -40,81 +42,477 @@
         </div>
     </header>
 
-    <!-- A parte abaixo corresponde a barra de pesquisa -->
-    <nav id="pesquisa">
-        <div class="input-group">
-            <div class="input-icon">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
-            <input type="text" id="search" class="input-field" placeholder="Pesquisar">
-        </div>
-    </nav>
+    <section class="slider">
+        <div class="slider-content">
+            <input type="radio" name="btn-radio" id="radio01">
+            <input type="radio" name="btn-radio" id="radio02">
+            <input type="radio" name="btn-radio" id="radio03">
+            <input type="radio" name="btn-radio" id="radio04">
 
-    <!-- a parte abaixo são os livros que irão aparecer ao pesquisar por seu respectivo nome.
-     Deve copiar o modelo abaixo a partir da tag <li> e substituir as informações -->
-    <div id="container">
-        <ul class="itens">
-            <!-- copie a partir daqui -->
-            <li class="item">
-                <div class="item-image">
-                    <img src="images/up.jpg" alt="">
+            <div class="slide-box primeiro">
+                <img class="img-desktop" src="images/imagem1.webp" alt="">
+                <div>
+                    <q>
+                        Toda la naturaleza es un anhelo de servicio; sirve la nube, sirve el aire, sirve el surco.
+                    </q>
+                    <p style="font-style: italic;color: #fff;"> -Gabriela Mistral</p>
                 </div>
-                <div class="item-content">
-                    <!-- Mude o "href" do link (tag <a>) para a pagina html criada correspondente ao livro criado na pasta
-                     "livros" -->
-                    <a href="/livros/esboço.html" class="item-title">
-                        <!-- nome do livro dentro da tag <strong>-->
-                        <strong>nome do esboço</strong>
-                    </a>
-                    <p class="item-subtitle">
-                        <i class="fa-solid fa-film"></i>
-                        <!-- Data de lançamento do livro -->
-                        Filme (2024)
-                    </p>
-                    <!-- Trecho da sinopse do livro (OBS.: coloque tres pontos "..." no final) -->
-                    <p class="item-description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quos alias quasi dolorum
-                        quas
-                        minima illo delectus tempora perferendis magnam, laudantium illum ducimus rerum asperiores
-                        odio
-                        natus nostrum eligendi fuga!
-                    </p>
+            </div>
+
+            <div class="slide-box">
+                <img class="img-desktop" src="images/imagem2.jpg" alt="">
+                <div>
+                    <q>
+                        Toda la naturaleza es un anhelo de servicio; sirve la nube, sirve el aire, sirve el surco.
+                    </q>
+                    <p style="font-style: italic;color: #fff;"> -Gabriela Mistral</p>
                 </div>
-            </li>
-            <!-- copie o esboço até aqui -->
-            <!-- OBS.: cole o esboço copiado sempre dentro da tag <ul> para que não bug o site-->
-        </ul>
+            </div>
+
+            <div class=" slide-box">
+                <img class="img-desktop" src="images/imagem3.jpg" alt="">
+                <div>
+                    <q>
+                        Toda la naturaleza es un anhelo de servicio; sirve la nube, sirve el aire, sirve el surco.
+                    </q>
+                    <p style="font-style: italic;color: #fff;"> -Gabriela Mistral</p>
+                </div>
+            </div>
+
+            <div class=" slide-box">
+                <img class="img-desktop" src="images/imagem4.jpg" alt="">
+                <div>
+                    <q>
+                        Toda la naturaleza es un anhelo de servicio; sirve la nube, sirve el aire, sirve el surco.
+                    </q>
+                    <p style="font-style: italic;color: #fff;"> -Gabriela Mistral</p>
+                </div>
+            </div>
+    </section>
+
+    <div>
+        <nav id="pesquisa">
+            <div class="input-group">
+                <div class="input-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <input type="text" id="search" class="input-field" placeholder="Pesquisar">
+            </div>
+        </nav>
+        <nav>
+            <div id="container">
+                <ul class="itens">
+                    <li class="item">
+                        <div class="item-image">
+                            <img src="images/livro1.jpg" alt="">
+                        </div>
+                        <div class="item-content">
+                            <a href="livros/esboço.html" class="item-title">
+                                <strong>Los detectives salvajes</strong>
+                            </a>
+                            <p class="item-subtitle">
+                                <i class="fa-solid fa-film"></i>
+                                libro (1998)
+                            </p>
+                            <p class="item-description">
+                                Los personajes principales de este libro son los amigos Ulises Lima y Arturo Belano,
+                                dos poetas que deciden investigar qué ocurrió con Cesárea Tinajero, una misteriosa y
+                                desaparecida
+                                poeta de la vanguardia mexicana...
+                            </p>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="item-image">
+                            <img src="images/livro2.jpg" alt="">
+                        </div>
+                        <div class="item-content">
+                            <a href="livros/esboço2.html" class="item-title">
+                                <strong>La historia de una gaviota y el gato que le enseñó a volar</strong>
+                            </a>
+                            <p class="item-subtitle">
+                                <i class="fa-solid fa-film"></i>
+                                libro (1998)
+                            </p>
+                            <p class="item-description">
+                                El gato Zorbas tenía incluso planes banales para las vacaciones de sus dueños...
+                            </p>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="item-image">
+                            <img src="images/livro3.jpg" alt="">
+                        </div>
+                        <div class="item-content">
+                            <a href="livros/esboço3.html" class="item-title">
+                                <strong>O túnel</strong>
+                            </a>
+                            <p class="item-subtitle">
+                                <i class="fa-solid fa-film"></i>
+                                libro (1948)
+                            </p>
+                            <p class="item-description">
+                                un artista plástico que confesa al asesinado María Iribarne, una mujer pela que
+                                desenvuelve una obsesión...
+                            </p>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="item-image">
+                            <img src="images/livro4.jpg" alt="">
+                        </div>
+                        <div class="item-content">
+                            <a href="livros/esboço4.html" class="item-title">
+                                <strong>la casa de los espíritus</strong>
+                            </a>
+                            <p class="item-subtitle">
+                                <i class="fa-solid fa-film"></i>
+                                libro (1982)
+                            </p>
+                            <p class="item-description">
+                                Las pasiones, luchas y secretos de la familia Trueba abarcan tres generaciones
+                                y un siglo de violentas transformaciones, que culminaron en una crisis que lleva
+                                al patriarca y a su querida nieta a lados opuestos de las barricadas...
+                            </p>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="item-image">
+                            <img src="images/livro5.jpg" alt="">
+                        </div>
+                        <div class="item-content">
+                            <a href="livros/esboço5.html" class="item-title">
+                                <strong>Una aventura en el Palacio de la Pena</strong>
+                            </a>
+                            <p class="item-subtitle">
+                                <i class="fa-solid fa-film"></i>
+                                libro (2020)
+                            </p>
+                            <p class="item-description">
+                                En 1967, Isabel empezó a escribir para una revista femenina y también para una
+                                revista infantil. En 1970 comenzó a trabajar en televisión, presentando un programa
+                                de entrevistas...
+                            </p>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="item-content">
+                            <a href="livros/esboçoo1.html" class="item-title">
+                                <strong>Monstrua</strong>
+                            </a>
+                            <p class="item-subtitle">
+                                <i class="fa-solid fa-film"></i>
+                                libro (2022)
+                            </p>
+                            <p class="item-description">
+                                Es verano y Arin Nain, de 17 años, tiene un accidente en su departamento: se ha
+                                cortado con un vidrio. Mientras aguanta el dolor con la mano bajo la llave, se da
+                                cuenta que sus ojos se han vuelto oscuros y que su sangre es negra...
+                            </p>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="item-image">
+                            <img src="images/llivro2.jpg" alt="">
+                        </div>
+                        <div class="item-content">
+                            <a href="livros/esboçoo2.html" class="item-title">
+                                <strong>Laguna negra</strong>
+                            </a>
+                            <p class="item-subtitle">
+                                <i class="fa-solid fa-film"></i>
+                                libro (2022)
+                            </p>
+                            <p class="item-description">
+                                Consuelo no tiene magia, es la rezagada de una familia de brujas.
+                                Pero qué importa, sabe mentir bien y encanta a sus clientes con sesiones
+                                de pura parafernalia...
+                            </p>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="item-image">
+                            <img src="images/llivro3.jpg" alt="">
+                        </div>
+                        <div class="item-content">
+                            <a href="livros/esboçoo3.html" class="item-title">
+                                <strong>Los detectives salvajes</strong>
+                            </a>
+                            <p class="item-subtitle">
+                                <i class="fa-solid fa-film"></i>
+                                libro (1998)
+                            </p>
+                            <p class="item-description">
+                                Los personajes principales de este libro son los amigos Ulises Lima y Arturo Belano,
+                                dos poetas que deciden investigar qué ocurrió con Cesárea Tinajero, una misteriosa y
+                                desaparecida
+                                poeta de la vanguardia mexicana...
+                            </p>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="item-image">
+                            <img src="images/llivro4.jpg" alt="">
+                        </div>
+                        <div class="item-content">
+                            <a href="livros/esboçoo4.html" class="item-title">
+                                <strong>Cuentos chilenos de terror, misterio y fantasía</strong>
+                            </a>
+                            <p class="item-subtitle">
+                                <i class="fa-solid fa-film"></i>
+                                libro (2015)
+                            </p>
+                            <p class="item-description">
+                                Esta recopilación de cuentos fantásticos persigue, por una parte, acercar
+                                la lectura de nuestros autores nacionales a un público que está en búsqueda
+                                de sus raíces y reconoce en el misterio y lo sobrenatural un componente esencial
+                                de la configuración de la identidad chilena...
+                            </p>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="item-image">
+                            <img src="images/llivro5.jpg" alt="">
+                        </div>
+                        <div class="item-content">
+                            <a href="livros/esboçoo5.html" class="item-title">
+                                <strong>RELATOS CHILENOS DE MIEDO Y NEBLINA
+                                </strong>
+                            </a>
+                            <p class="item-subtitle">
+                                <i class="fa-solid fa-film"></i>
+                                libro (1996)
+                            </p>
+                            <p class="item-description">
+                                Este libro pretende recoger un género prácticamente ausente en la literatura
+                                chilena: el cuento de terror. Si bien, a veces podemos encontrar algunos
+                                relatos que se refieren al tema, siempre discurren sobre leyendas o mitos del
+                                pasado, que pueden parangonarse más bien al género de literatura folklórica que
+                                al cuento de terror propiamente tal...
+                            </p>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="item-image">
+                            <img src="images/livro2.jpg" alt="">
+                        </div>
+                        <div class="item-content">
+                            <a href="livros/esboço2.html" class="item-title">
+                                <strong>el resto es silencio</strong>
+                            </a>
+                            <p class="item-subtitle">
+                                <i class="fa-solid fa-film"></i>
+                                libro (2008)
+                            </p>
+                            <p class="item-description">
+                                En el otoño de 1941, Erico Verissimo presencia la muerte de una "muchacha rubia,
+                                blanca y menuda" que se arrojó desde un edificio en el centro de Porto Alegre...
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </div>
 
-    <!-- a parte abaixo são os livros que irão aparecer no index. deve copiar o esboço abaixo
-     e auterar as informções dependendo do livro -->
     <main id="main">
         <article>
-            <h2>Populares</h2>
+            <h2>Ficção</h2>
             <hr>
             <br>
             <section>
 
-                <ol style="list-style: none;  " class="populares" id="01">
-
+                <ol style="list-style: none;  " class="generos" id="01">
                     <li class="li">
                         <figure>
-                            <!-- insira a imagem do livro no "src" da tag <img> -->
-                            <img src="images/up.jpg" class="livro">
-                            <figcaption><a href="livros/esboço.html">
-                                    <!-- insira abaixo o nome do livro dentro da tag <strong> -->
-                                    <strong>nome do esboço</strong>
+                            <img src="images/livro1.jpg" class="livro">
+                            <figcaption> <a href="livros/esboço.html">
+                                    <strong>Los detectives salvajes</strong>
                                 </a>
                             </figcaption>
                         </figure>
                     </li>
-                    <!-- copie ate a tag </li> -->
+                    <li class="li">
+                        <figure>
+                            <img src="images/livro2.jpg" class="livro">
+                            <figcaption> <a href="livros/esboço2.html">
+                                    <strong>La historia de una gaviota y el gato que le enseñó a volar </strong>
+                                </a>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="li">
+                        <figure>
+                            <img src="images/livro3.jpg" class="livro">
+                            <figcaption><a href="livros/esboço3.html">
+                                    <strong> o túnel </strong>
+                                </a>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="li">
+                        <img src="images/livro4.jpg" class="livro">
+                        <figcaption><a href="livros/esboço4.html">
+                                <strong>La casa de los espíritus </strong>
+                            </a>
+                        </figcaption>
+                    </li>
 
-                </ol>
+                    <li class="li">
+                        <figure>
+                            <img src="images/livro5.jpg" class="livro">
+                            <figcaption><a href="livros/esboço5.html">
+                                    <strong>Uma Aventura no Palácio da Pena</strong>
+                                </a>
+                            </figcaption>
+                        </figure>
+                    </li>
             </section>
         </article>
 
+
+        <article>
+            <h2>Terror</h2>
+            <hr>
+            <br>
+            <section>
+
+                <ol style="list-style: none;  " class="generos" id="01">
+                    <li class="li">
+                        <figure>
+                            <img src="images/llivro1.jpg" class="livro">
+                            <figcaption> <a href="livros/esboçoo1.html">
+                                    <strong>Monstrua</strong>
+                                </a>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="li">
+                        <figure>
+                            <img src="images/llivro2.jpg" class="livro">
+                            <figcaption> <a href="livros/esboçoo2.html">
+                                    <strong>Laguna negra </strong>
+                                </a>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="li">
+                        <figure>
+                            <img src="images/llivro3.jpg" class="livro">
+                            <figcaption><a href="livros/esboçoo3.html">
+                                    <strong>La última niebla / La amortajada </strong>
+                                </a>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="li">
+                        <figure>
+                            <img src="images/llivro4.jpg" class="livro">
+                            <figcaption><a href="livros/esboçoo4.html">
+                                    <strong>Cuentos chilenos de terror, misterio y fantasía </strong>
+                                </a>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="li">
+                        <figure>
+                            <img src="images/llivro5.jpg" class="livro">
+                            <figcaption><a href="livros/esboçoo5.html">
+                                    <strong>RELATOS CHILENOS DE MIEDO Y NEBLINA</strong>
+                                </a>
+                            </figcaption>
+                        </figure>
+                    </li>
+            </section>
+        </article>
+
+
+        <article>
+            <h2>Poesia</h2>
+            <hr>
+            <br>
+            <section>
+
+                <ol style="list-style: none;  " class="generos" id="01">
+
+                    <li class="li">
+                        <figure>
+                            <img src="images/livros1.jpg" class="livro">
+                            <figcaption> <a href="livros/esboços1.html">
+                                    <strong>Veinte poemas de amor y una canción desesperada</strong>
+                                </a>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="li">
+                        <figure>
+                            <img src="images/livros2.jpg" class="livro">
+                            <figcaption> <a href="livros/esboços2.html">
+                                    <strong>desolação </strong>
+                                </a>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="li">
+                        <figure>
+                            <img src="images/livros3.jpg" class="livro">
+                            <figcaption><a href="livros/esboços3.html">
+                                    <strong>Anteparaíso: 975 </strong>
+                                </a>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="li">
+                        <figure>
+                            <img src="images/llivros4.jpg" class="livro">
+                            <figcaption><a href="livros/esboços4.html">
+                                    <strong>Poemas e Antipoemas </strong>
+                                </a>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="li">
+                        <figure>
+                            <img src="images/livros5.jpg" class="livro">
+                            <figcaption><a href="livros/esboços5.html">
+                                    <strong>Poemas escolhidos</strong>
+                                </a>
+                            </figcaption>
+                        </figure>
+                    </li>
+            </section>
+        </article>
     </main>
+
+    <footer>
+        <div class="container-footer">
+            <div class="row-footer">
+                <!-- footer col-->
+                <div class="footer-col">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="#"> Quem somos </a></li>
+                        <li><a href=""> nossos serviços </a></li>
+                        <li><a href=""> política de privacidade </a></li>
+                        <li><a href=""> programa de afiliados</a></li>
+                    </ul>
+                </div>
+                <!--end footer col-->
+                <!-- footer col-->
+                <div class="footer-col">
+                    <div class="medias-socias">
+                        <a href="#"> <i class="fa fa-facebook"></i> </a>
+                        <a href="#"> <i class="fa fa-instagram"></i> </a>
+                        <a href="#"> <i class="fa fa-twitter"></i> </a>
+                        <a href="#"> <i class="fa fa-linkedin"></i> </a>
+                    </div>
+
+                </div>
+                <!--end footer col-->
+            </div>
+        </div>
+    </footer>
+
 </body>
 
 </html>

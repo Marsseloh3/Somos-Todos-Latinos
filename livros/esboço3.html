@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style2.css">
+    <title>o túnel</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <h1>Logo</h1>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"> Sobre</a></li>
+                </ul>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="images/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+            </ul>
+
+        </div>
+    </header>
+
+    <main>
+        <div id="voltar">
+            <i class="fa-solid fa-arrow-left"></i>
+            <a href="/index.html"><strong>Voltar</strong></a>
+        </div>
+        <div id="info">
+            <img src="images/livro3.jpg" class="foto">
+
+            <div>
+                <h1>O túnel</h1>
+                <p>El túnel es un romance de Ernesto Sábato que cuenta la historia de
+                    Juan Pablo Castel, un artista plástico que confesa al asesinado María Iribarne,
+                    una mujer pela que desenvuelve una obsesión.
+                    El romance es un drama existencialista, narrado como propio asesino.
+                    Castel tem dificultades de comunicación, tanto en su obra como socialmente.
+                    La relación entre Castel y María alterna entre momentos de ternura y situaciones de atrito.
+                    Castel cria una imagen de María basada en sus fantasías, que no corresponden a la realidad.
+                    El título del libro es una metáfora del aislamiento de Castel.
+                </p>
+            </div>
+        </div>
+        <div class=" downloads">
+
+            <a href="https://www.amazon.com.br/T%C3%BAnel-Ernesto-Sabato/dp/8535900454"> Download pt-br </a>
+
+            <a href="https://www.amazon.com.br/El-tunel-Ernesto-Sabato/dp/0061626716"> amazon espanhol </a>
+        </div>
+        <hr>
+    </main>
+
+    <article>
+        <div id="info">
+            <img src="images/sabato.jpg" class="artista">
+
+            <div>
+                <h1>Luis Sepúlveda</h1>
+                Ernesto Sabato fue un novelista, ensayista y artista visual argentino.
+                Sábato fue ganador del Premio Cervantes de Literatura y uno de los más grandes
+                autores argentinos del siglo XX.
+
+                </p>
+            </div>
+        </div>
+    </article>
+
+    <div class="container">
+        <h1>Conversor de <span>Texto</span> para <span>Fala</span></h1>
+        <p>Digite um texto ou envie algum arquivo para ser lido:</p>
+        <div id="entrada-de-conteudo">
+            <textarea placeholder="Digite alguma coisa..." id="entrada-de-texto"></textarea>
+            <div>
+                <label for="upload-arquivo" id="arquivo-label">Enviar arquivo</label>
+                <input type="file" id="upload-arquivo" accept=".txt" />
+            </div>
+        </div>
+        <div class="acoes">
+            <div class="acao-box">
+                <p>Selecione a voz:</p>
+                <select id="selecao-voz"></select>
+            </div>
+            <div class="acao-box">
+                <p>Clique para ouvir:</p>
+                <button id="ouvir-btn">Ouvir</button>
+            </div>
+            <div class="acao-box">
+                <p>Obtenha um arquivo do conteúdo:</p>
+                <button id="baixar-texto-btn">Baixar Texto</button>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+    <footer>
+        <div class="container-footer">
+            <div class="row-footer">
+                <!-- footer col-->
+                <div class="footer-col">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="#"> Quem somos </a></li>
+                        <li><a href=""> nossos serviços </a></li>
+                        <li><a href=""> política de privacidade </a></li>
+                        <li><a href=""> programa de afiliados</a></li>
+                    </ul>
+                </div>
+                <!--end footer col-->
+                <!-- footer col-->
+                <div class="footer-col">
+                    <div class="medias-socias">
+                        <a href="#"> <i class="fa fa-facebook"></i> </a>
+                        <a href="#"> <i class="fa fa-instagram"></i> </a>
+                        <a href="#"> <i class="fa fa-twitter"></i> </a>
+                        <a href="#"> <i class="fa fa-linkedin"></i> </a>
+                    </div>
+
+                </div>
+                <!--end footer col-->
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function menuShow() {
+            let menuMobile = document.querySelector('.mobile-menu');
+            if (menuMobile.classList.contains('open')) {
+                menuMobile.classList.remove('open');
+                document.querySelector('.icon').src = "images/menu_white_36dp.svg";
+            } else {
+                menuMobile.classList.add('open');
+                document.querySelector('.icon').src = "images/close_white_36dp.svg";
+            }
+        }
+
+    </script>
+</body>
+
+</html>

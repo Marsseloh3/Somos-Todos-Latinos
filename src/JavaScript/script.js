@@ -9,7 +9,24 @@ function menuShow() {
     }
 }
 
+const radio = document.querySelectorAll('.manual-btn');
+let cont = 1
 
+document.getElementById('radio01').checked = true
+
+setInterval(() => {
+    proximaImg()
+}, 4000)
+
+function proximaImg() {
+    cont++;
+
+    if (cont > 4) {
+        cont = 1;
+    }
+
+    document.getElementById('radio0' + cont).checked = true
+}
 
 const searchInput = document.getElementById('search');
 const container = document.getElementById('container');
@@ -23,26 +40,24 @@ searchInput.addEventListener('input', (event) => {
     let hasResult = false;
 
     if (value != '') {
-        container.style.opacity = '1';
+        container.style.display = 'none';
         itens.forEach(item => {
             if (formatString(item.textContent).indexOf(value) != -1) {
                 item.style.display = 'flex';
                 hasResult = true
+                container.style.display = 'flex';
+
             } else {
                 item.style.display = 'none';
+                container.style.display = 'noen';
             }
         })
 
-        if (hasResult) {
-            noResults.style.display = 'none';
-        } else {
-            noResults.style.display = 'block';
-            container.style.opacity = '0';
-        }
     } else {
-        itens.forEach(item => item.style.display = 'flex');
-        container.style.opacity = '0';
+        itens.forEach(item => item.style.display = 'none');
         noResults.style.display = 'none';
+        container.style.display = 'none';
+
 
     }
 
@@ -84,4 +99,3 @@ function sort() {
         }
     }
 }
-

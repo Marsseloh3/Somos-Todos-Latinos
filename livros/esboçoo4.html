@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style2.css">
+    <title>Cuentos chilenos de terror, misterio y fantasía</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <h1>Logo</h1>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"> Sobre</a></li>
+                </ul>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="images/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+            </ul>
+
+        </div>
+    </header>
+
+    <main>
+        <div id="voltar">
+            <i class="fa-solid fa-arrow-left"></i>
+            <a href="/index.html"><strong>Voltar</strong></a>
+        </div>
+        <div id="info">
+            <img src="images/llivro4.jpg" class="foto">
+
+            <div>
+                <h1>Cuentos chilenos de terror, misterio y fantasía</h1>
+                <p>Esta recopilación de cuentos fantásticos persigue, por una parte, acercar la lectura
+                    de nuestros autores nacionales a un público que está en búsqueda de sus raíces y reconoce en
+                    el misterio y lo sobrenatural un componente esencial de la configuración de la identidad chilena.
+                    Por esta razón, no es extraño que aquellas historias que pertenecen a la tradición oral y que todos
+                    atesoramos, o bien los escenarios donde ocurren los relatos, vuelvan a ocupar un lugar preponderante
+                    en nuestra memoria.
+                </p>
+            </div>
+        </div>
+        <div class=" downloads">
+
+            <a href="https://www.amazon.com/-/es/Carolina-Heiremans/dp/9562607232"> Download pt-br </a>
+
+            <a href="https://www.amazon.com/-/es/Carolina-Heiremans/dp/9562607232"> amazon espanhol </a>
+        </div>
+        <hr>
+    </main>
+
+    <article>
+        <div id="info">
+            <img src="images/carolina.jpg" class="artista">
+
+            <div>
+                <h1>Carolina Heiremans</h1>
+                Carolina Heiremans es una figura con diferentes roles en el mundo literario y académico.
+                Como editora participó en la organización del libro chilenos de terror, misterio y
+                fantasía, una colección que busca rescatar historias sobrenaturales y de misterio arraigadas en
+                la tradición chilena. Este libro fue publicado en colaboración con otras editoriales, como Jesús
+                Diamantino Valdés y Verónica Barros Iverson.
+
+                Además, Heiremans trabaja en el campo de la educación y la salud mental. Es directora de la
+                Licenciatura en Humanidades y Ciencias Sociales de la Universidad San Sebastián, en Chile. En
+                este cargo, analiza temas relevantes para las nuevas generaciones, como el impacto de la pandemia
+                en la salud emocional y la creciente conciencia sobre la importancia de buscar ayuda psicológic
+                sin estigmas.
+                </p>
+            </div>
+        </div>
+    </article>
+
+    <div class="container">
+        <h1>Conversor de <span>Texto</span> para <span>Fala</span></h1>
+        <p>Digite um texto ou envie algum arquivo para ser lido:</p>
+        <div id="entrada-de-conteudo">
+            <textarea placeholder="Digite alguma coisa..." id="entrada-de-texto"></textarea>
+            <div>
+                <label for="upload-arquivo" id="arquivo-label">Enviar arquivo</label>
+                <input type="file" id="upload-arquivo" accept=".txt" />
+            </div>
+        </div>
+        <div class="acoes">
+            <div class="acao-box">
+                <p>Selecione a voz:</p>
+                <select id="selecao-voz"></select>
+            </div>
+            <div class="acao-box">
+                <p>Clique para ouvir:</p>
+                <button id="ouvir-btn">Ouvir</button>
+            </div>
+            <div class="acao-box">
+                <p>Obtenha um arquivo do conteúdo:</p>
+                <button id="baixar-texto-btn">Baixar Texto</button>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+
+    <footer>
+        <div class="container-footer">
+            <div class="row-footer">
+                <!-- footer col-->
+                <div class="footer-col">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="#"> Quem somos </a></li>
+                        <li><a href=""> nossos serviços </a></li>
+                        <li><a href=""> política de privacidade </a></li>
+                        <li><a href=""> programa de afiliados</a></li>
+                    </ul>
+                </div>
+                <!--end footer col-->
+                <!-- footer col-->
+                <div class="footer-col">
+                    <div class="medias-socias">
+                        <a href="#"> <i class="fa fa-facebook"></i> </a>
+                        <a href="#"> <i class="fa fa-instagram"></i> </a>
+                        <a href="#"> <i class="fa fa-twitter"></i> </a>
+                        <a href="#"> <i class="fa fa-linkedin"></i> </a>
+                    </div>
+
+                </div>
+                <!--end footer col-->
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function menuShow() {
+            let menuMobile = document.querySelector('.mobile-menu');
+            if (menuMobile.classList.contains('open')) {
+                menuMobile.classList.remove('open');
+                document.querySelector('.icon').src = "images/menu_white_36dp.svg";
+            } else {
+                menuMobile.classList.add('open');
+                document.querySelector('.icon').src = "images/close_white_36dp.svg";
+            }
+        }
+
+    </script>
+</body>
+
+</html>

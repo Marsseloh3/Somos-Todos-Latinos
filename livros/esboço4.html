@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style2.css">
+    <title>la casa de los espíritus</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <h1>Logo</h1>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"> Sobre</a></li>
+                </ul>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="images/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+            </ul>
+
+        </div>
+    </header>
+
+    <main>
+        <div id="voltar">
+            <i class="fa-solid fa-arrow-left"></i>
+            <a href="/index.html"><strong>Voltar</strong></a>
+        </div>
+        <div id="info">
+            <img src="images/livro4.jpg" class="foto">
+
+            <div>
+                <h1>la casa de los espíritus</h1>
+                <p>Las pasiones, luchas y secretos de la familia Trueba abarcan tres generaciones y
+                    un siglo de violentas transformaciones, que culminaron en una crisis que lleva al
+                    patriarca y a su querida nieta a lados opuestos de las barricadas. Conocida como una
+                    obra maestra de la literatura latinoamericana, La Casa de los Espíritus presenta una
+                    narrativa intrigante que entreteje pasado, presente y futuro de una manera fluida
+                    y elegante. Isabel Allende nos presenta personajes ricos en emoción y detalles muy
+                    detallados sobre el universo que los rodea. Una novela atemporal con toques de
+                    inspiración de la propia familia del autor, sin duda es una obra que necesita estar
+                    en las estanterías de los lectores.
+                </p>
+            </div>
+        </div>
+        <div class=" downloads">
+
+            <a
+                href="https://www.amazon.com.br/casa-dos-esp%C3%ADritos-capa-nova/dp/8528622568/ref=asc_df_8528622568/?tag=googleshopp00-20&linkCode=df0&hvadid=709857900423&hvpos=&hvnetw=g&hvrand=17572736958318131166&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9197956&hvtargid=pla-397665026055&psc=1&mcid=7c5bbfa7e93d373e92a88171ed2343ac&gad_source=1">
+                Download pt-br</a>
+
+            <a href="https://www.amazon.com.br/Casa-los-Esp%C3%ADritus-Isabel-Allende/dp/9871138903"> amazon
+                espanhol </a>
+        </div>
+        <hr>
+    </main>
+
+    <article>
+        <div id="info">
+            <img src="images/isabel.jpg" class="artista">
+
+            <div>
+                <h1>Isabel Allende</h1>
+                En 1967, Isabel empezó a escribir para una revista femenina y también para una revista infantil. En
+                1970 comenzó a trabajar en televisión, presentando un programa de entrevistas. Su obra,
+                "El Embajador", se estrenó en 1972.
+                En 1973 se produjo en Chile un golpe militar, encabezado por el general Augusto Pinochet,
+                que depuso al presidente Salvador Allende, tío de Isabel Allende. Con el establecimiento
+                de una dictadura militar en Chile y la muerte de Salvador Allende, Isabel abandonó el país,
+                junto con su familia, y se refugió en Caracas, Venezuela.
+
+                </p>
+            </div>
+        </div>
+    </article>
+
+    <div class="container">
+        <h1>Conversor de <span>Texto</span> para <span>Fala</span></h1>
+        <p>Digite um texto ou envie algum arquivo para ser lido:</p>
+        <div id="entrada-de-conteudo">
+            <textarea placeholder="Digite alguma coisa..." id="entrada-de-texto"></textarea>
+            <div>
+                <label for="upload-arquivo" id="arquivo-label">Enviar arquivo</label>
+                <input type="file" id="upload-arquivo" accept=".txt" />
+            </div>
+        </div>
+        <div class="acoes">
+            <div class="acao-box">
+                <p>Selecione a voz:</p>
+                <select id="selecao-voz"></select>
+            </div>
+            <div class="acao-box">
+                <p>Clique para ouvir:</p>
+                <button id="ouvir-btn">Ouvir</button>
+            </div>
+            <div class="acao-box">
+                <p>Obtenha um arquivo do conteúdo:</p>
+                <button id="baixar-texto-btn">Baixar Texto</button>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+    <footer>
+        <div class="container-footer">
+            <div class="row-footer">
+                <!-- footer col-->
+                <div class="footer-col">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="#"> Quem somos </a></li>
+                        <li><a href=""> nossos serviços </a></li>
+                        <li><a href=""> política de privacidade </a></li>
+                        <li><a href=""> programa de afiliados</a></li>
+                    </ul>
+                </div>
+                <!--end footer col-->
+                <!-- footer col-->
+                <div class="footer-col">
+                    <div class="medias-socias">
+                        <a href="#"> <i class="fa fa-facebook"></i> </a>
+                        <a href="#"> <i class="fa fa-instagram"></i> </a>
+                        <a href="#"> <i class="fa fa-twitter"></i> </a>
+                        <a href="#"> <i class="fa fa-linkedin"></i> </a>
+                    </div>
+
+                </div>
+                <!--end footer col-->
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function menuShow() {
+            let menuMobile = document.querySelector('.mobile-menu');
+            if (menuMobile.classList.contains('open')) {
+                menuMobile.classList.remove('open');
+                document.querySelector('.icon').src = "images/menu_white_36dp.svg";
+            } else {
+                menuMobile.classList.add('open');
+                document.querySelector('.icon').src = "images/close_white_36dp.svg";
+            }
+        }
+
+    </script>
+</body>
+
+</html>

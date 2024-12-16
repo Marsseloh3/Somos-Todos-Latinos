@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style2.css">
+    <title>De amor y sombra</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <h1>Logo</h1>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"> Sobre</a></li>
+                </ul>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="images/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+            </ul>
+
+        </div>
+    </header>
+
+    <main>
+        <div id="voltar">
+            <i class="fa-solid fa-arrow-left"></i>
+            <a href="/index.html"><strong>Voltar</strong></a>
+        </div>
+        <div id="info">
+            <img src="images/livroo1.jpg" class="foto">
+
+            <div>
+                <h1>De amor y sombra</h1>
+                <p>A partir de un reportaje rutinario, un mundo extraño, oculto por la historia oficial, se
+                    revela a Irene, una periodista de familia aristocrática, y a Francisco, un fotógrafo hijo
+                    de un profesor anarquista, haciéndolos sentir moralmente responsables de los crueles hechos
+                    que suceden. A la sombra del poder y el abuso, y cada vez más presionados por la injusticia y
+                    el odio, ven cómo su amor mutuo se desarrolla como una fuerza contraria. Pero, ¿están dispuestos
+                    a arriesgarlo todo en nombre de la justicia y la verdad, en un país donde las detenciones
+                    arbitrarias
+                    las ejecuciones sumarias son una práctica constante?
+                </p>
+            </div>
+        </div>
+        <div class=" downloads">
+            <button>
+                <a href="https://www.amazon.com.br/amor-sombra-Isabel-Allende/dp/8528624110"> amazon portugues </a>
+            </button>
+            <button>
+                <a href="https://www.amazon.com.br/amor-y-sombra-Spanish-ebook/dp/B00H4H1G7I"> amazon espanhol </a>
+            </button>
+        </div>
+        <hr>
+    </main>
+
+    <article>
+        <div id="info">
+            <img src="images/isabel.jpg" class="artista">
+
+            <div>
+                <h1>Isabel Allende</h1>
+                <p>
+                    En 1967, Isabel empezó a escribir para una revista femenina y también para una revista infantil. En
+                    1970 comenzó a trabajar en televisión, presentando un programa de entrevistas. Su obra,
+                    "El Embajador", se estrenó en 1972.
+                    En 1973 se produjo en Chile un golpe militar, encabezado por el general Augusto Pinochet,
+                    que depuso al presidente Salvador Allende, tío de Isabel Allende. Con el establecimiento
+                    de una dictadura militar en Chile y la muerte de Salvador Allende, Isabel abandonó el país,
+                    junto con su familia, y se refugió en Caracas, Venezuela.
+
+                </p>
+            </div>
+        </div>
+    </article>
+    <footer>
+        <div class="container-footer">
+            <div class="row-footer">
+                <!-- footer col-->
+                <div class="footer-col">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="#"> Quem somos </a></li>
+                        <li><a href=""> nossos serviços </a></li>
+                        <li><a href=""> política de privacidade </a></li>
+                        <li><a href=""> programa de afiliados</a></li>
+                    </ul>
+                </div>
+                <!--end footer col-->
+                <!-- footer col-->
+                <div class="footer-col">
+                    <h4>Obter ajuda</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Transporte</a></li>
+                        <li><a href="#">devoluções</a></li>
+                        <li><a href="#">Status De Pedido</a></li>
+                        <li><a href="#">Opções De Pagamento</a></li>
+                    </ul>
+                </div>
+                <!--end footer col-->
+                <!-- footer col-->
+                <div class="footer-col">
+                    <h4>Loja online</h4>
+                    <ul>
+                        <li><a href="#">Relógio</a></li>
+                        <li><a href="#">Saco</a></li>
+                        <li><a href="#">Calçado</a></li>
+                        <li><a href="#">Endereço</a></li>
+                    </ul>
+                </div>
+                <!--end footer col-->
+                <!-- footer col-->
+                <div class="footer-col">
+                    <div class="medias-socias">
+                        <a href="#"> <i class="fa fa-facebook"></i> </a>
+                        <a href="#"> <i class="fa fa-instagram"></i> </a>
+                        <a href="#"> <i class="fa fa-twitter"></i> </a>
+                        <a href="#"> <i class="fa fa-linkedin"></i> </a>
+                    </div>
+
+                </div>
+                <!--end footer col-->
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script>
+        function menuShow() {
+            let menuMobile = document.querySelector('.mobile-menu');
+            if (menuMobile.classList.contains('open')) {
+                menuMobile.classList.remove('open');
+                document.querySelector('.icon').src = "images/menu_white_36dp.svg";
+            } else {
+                menuMobile.classList.add('open');
+                document.querySelector('.icon').src = "images/close_white_36dp.svg";
+            }
+        }
+
+    </script>
+</body>
+
+</html>

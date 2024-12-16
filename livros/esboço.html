@@ -9,12 +9,10 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="style2.css">
-    <title>esboço</title>
+    <title>Los detectives salvajes</title>
 </head>
 
 <body>
-    <!-- esse é um esboço para a pagina de cada livro. deve copiar e colar em um novo arquivo .html dentro dessa mesma pasta -->
-    <!-- abaixo tem instruções das informações a serem substituidas -->
     <header>
         <nav class="nav-bar">
             <div class="logo">
@@ -48,55 +46,108 @@
             <a href="/index.html"><strong>Voltar</strong></a>
         </div>
         <div id="info">
-            <!-- no "src" insira a imagem do livro -->
-            <img src="/images/up.jpg" class="foto">
+            <img src="images/livro1.jpg" class="foto">
 
             <div>
-                <!-- na tag <h1> insira o nome do livro -->
-                <h1>Nome do livro</h1>
-                <!-- na tag <p> insira a sinopse do livro -->
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quidem, neque consequatur cumque,
-                    aliquam quam tempore ad sapiente, inventore velit reiciendis magnam doloremque! Ex ad, blanditiis ab
-                    repellendus et sed vitae deserunt accusantium molestias cumque temporibus nemo! Praesentium iusto
-                    maxime tempore ducimus amet tempora voluptate provident ratione ad? Repudiandae expedita minus error
-                    esse possimus voluptate doloribus a impedit dolorem facilis quae officiis aspernatur, ipsum libero
-                    cum deserunt non consectetur dolorum est, quam sunt dolore. Ipsum minus fugiat animi, autem,
-                    consequuntur nisi dolorem inventore hic esse, obcaecati veritatis eos itaque beatae assumenda
-                    sapiente! Dignissimos unde temporibus modi sunt ea, ab aliquam obcaecati vero totam ipsa
+                <h1>Los detectives salvajes</h1>
+                <p>Los personajes principales de este libro son los amigos Ulises Lima y Arturo Belano,
+                    dos poetas que deciden investigar qué ocurrió con Cesárea Tinajero, una misteriosa y
+                    desaparecida poeta de la vanguardia mexicana. Pero aunque la historia gira en torno a
+                    estos dos "detectives salvajes", el verdadero detective de la novela es el lector. Elegido
+                    como uno de los mejores libros del siglo XXI por The New York Times.
                 </p>
             </div>
         </div>
         <div class=" downloads">
-            <button>
-                Download
-            </button>
-            <button>
-                Download
-            </button>
+
+            <a
+                href="https://www.amazon.com.br/Os-detetives-selvagens-Roberto-Bola%C3%B1o/dp/8535908749/ref=sr_1_1?adgrpid=130597636529&dib=eyJ2IjoiMSJ9.Ubaywvpf5ATYtkJXEObC_Md_2KrIjpNIUh2RoD3Q_hrpOVzWWYwy_ysyMI4qxKNa.fdANCTc78EgFUdsm_coBOHX2OwKudMBICF3fwnurpcM&dib_tag=se&hvadid=595815709861&hvdev=c&hvlocphy=9197956&hvnetw=g&hvqmt=e&hvrand=223933052094387641&hvtargid=kwd-369671528142&hydadcr=5733_13215216&keywords=os+detetives+selvagens&qid=1734280354&sr=8-1&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9">
+                Download pt-br </a>
+
+            <a href="https://www.amazon.com.br/Los-Detectives-Salvajes-Bolano-Roberto/dp/8466337113"> amazon
+                espanhol </a>
         </div>
         <hr>
     </main>
 
     <article>
         <div id="info">
-            <!-- no "src" insira a imagem do autor do livro -->
-            <img src="/images/logo.webp" class="artista">
+            <img src="images/roberto.jpg" class="artista">
 
             <div>
-                <!-- na tag <h1> insira o nome do autor do livro -->
-                <h1>Nome do autor</h1>
-                <!-- na tag <p> insira o nome do autor do livro -->
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quidem, neque consequatur cumque,
-                    aliquam quam tempore ad sapiente, inventore velit reiciendis magnam doloremque! Ex ad, blanditiis ab
-                    repellendus et sed vitae deserunt accusantium molestias cumque temporibus nemo! Praesentium iusto
-                    maxime tempore ducimus amet tempora voluptate provident ratione ad? Repudiandae expedita minus error
-                    esse possimus voluptate doloribus a impedit dolorem facilis quae officiis aspernatur, ipsum libero
-                    cum deserunt non consectetur dolorum est, quam sunt dolore. Ipsum minus fugiat animi, autem,
+                <h1>Roberto Bolaño</h1>
+                <p>Autor de <strong> 2666 </strong> y de muchas otras obras aclamadas, Roberto Bolaño
+                    (1953-2003) nació en Santiago, Chile, y luego vivió en México, París
+                    y España. Fue elogiado como "de lejos el escritor más emocionante que
+                    ha surgido al sur del Río Grande en mucho tiempo"
+                    (Ilan Stavans, <strong>The Los Angeles Times</strong>) y como "la cosa real y la más rara"
+                    (Susan Sontag). Entre sus numerosos premios se encuentran el prestigioso
+                    Premio Herralde de Novela y el Premio Rómulo Gallegos. Fue ampliamente considerado
+                    el mayor escritor latinoamericano de su generación. Escribió nueve novelas,
+                    dos colecciones de cuentos y cinco libros de poesía antes de fallecer en julio de 2003 a
+                    los 50 años. Chris Andrews recibió el Premio TLS Valle Inclán y el Premio PEN de Traducción
+                    por sus traducciones de Bolaño.
 
                 </p>
             </div>
         </div>
     </article>
+
+    <div class="container">
+        <h1>Conversor de <span>Texto</span> para <span>Fala</span></h1>
+        <p>Digite um texto ou envie algum arquivo para ser lido:</p>
+        <div id="entrada-de-conteudo">
+            <textarea placeholder="Digite alguma coisa..." id="entrada-de-texto"></textarea>
+            <div>
+                <label for="upload-arquivo" id="arquivo-label">Enviar arquivo</label>
+                <input type="file" id="upload-arquivo" accept=".txt" />
+            </div>
+        </div>
+        <div class="acoes">
+            <div class="acao-box">
+                <p>Selecione a voz:</p>
+                <select id="selecao-voz"></select>
+            </div>
+            <div class="acao-box">
+                <p>Clique para ouvir:</p>
+                <button id="ouvir-btn">Ouvir</button>
+            </div>
+            <div class="acao-box">
+                <p>Obtenha um arquivo do conteúdo:</p>
+                <button id="baixar-texto-btn">Baixar Texto</button>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+
+    <footer>
+        <div class="container-footer">
+            <div class="row-footer">
+                <!-- footer col-->
+                <div class="footer-col">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="#"> Quem somos </a></li>
+                        <li><a href=""> nossos serviços </a></li>
+                        <li><a href=""> política de privacidade </a></li>
+                        <li><a href=""> programa de afiliados</a></li>
+                    </ul>
+                </div>
+                <!--end footer col-->
+                <!-- footer col-->
+                <div class="footer-col">
+                    <div class="medias-socias">
+                        <a href="#"> <i class="fa fa-facebook"></i> </a>
+                        <a href="#"> <i class="fa fa-instagram"></i> </a>
+                        <a href="#"> <i class="fa fa-twitter"></i> </a>
+                        <a href="#"> <i class="fa fa-linkedin"></i> </a>
+                    </div>
+
+                </div>
+                <!--end footer col-->
+            </div>
+        </div>
+    </footer>
 
     <script>
         function menuShow() {
